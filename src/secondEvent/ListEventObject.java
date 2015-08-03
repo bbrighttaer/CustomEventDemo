@@ -16,6 +16,7 @@ public class ListEventObject extends EventObject
     private String message;
     public ListEventObject(Object source, String message) {
         super(source);
+        this.message = message;
     }
 
     public String getMessage() {

@@ -21,12 +21,12 @@ public class RestaurantMenu {
         FoodMenu foodMenu = new FoodMenu();
         MenuListListenerImpl menuListListenerImpl = new MenuListListenerImpl();
         foodMenu.addMenuListener(menuListListenerImpl);//first listener
-        foodMenu.addMenuListener(new MenuListListener() {//second listener
-
-            public void actionPerformed(ListEventObject e) {
-               System.out.println("from second listener"+e.getMessage());
-            }
-        });
+//        foodMenu.addMenuListener(new MenuListListener() {//second listener
+//
+//            public void actionPerformed(ListEventObject e) {
+//               System.out.println("from second listener"+e.getMessage());
+//            }
+//        });
         foodMenu.setSizeOfMenu(10);
         
         Scanner s = new Scanner(System.in);
